@@ -18,14 +18,16 @@ For example, I could direct you to view this video:
 
 But even better, I can embed the video into the article, like this:
 
+<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WI_Ls-zD4VU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
 # How do we do that?
 
 YouTube provides a mechanism for [embedding video content in other web pages](http://www.htmlgoodies.com/tutorials/web_graphics/article.php/3480061/How-To-Add-a-YouTube-Video-to-Your-Web-Site.htm). If you view the video above on the YouTube site, you can see the code for embedding the video under the “Share” button.
 
 <figure markdown="1">
-![How to get embed html from a YouTube video](/assets/images/2020-02-21-embedding-content-in-linkedin-posts-using-oembed/embedding-an-image.jpg)
+![How to get embed html from a YouTube video](/assets/images/2020-02-21-embedding-content-in-linkedin-posts-using-oembed/embedding-an-image.png)
 </figure>
 
 The video can be embedded in another web page by including the snippet of HTML provided by YouTube:
@@ -68,8 +70,10 @@ We would need to have custom code to implement embedding support for every provi
 
 Around 10 years ago, a company called [Pownce](https://en.wikipedia.org/wiki/Pownce) was facing exactly this problem. As the [story is told](https://blog.leahculver.com/2008/05/announcing-oembed-an-open-standard-for-embedded-content.html) by [Leah Culver](https://www.linkedin.com/in/leahculver/), she and her coworker at Pownce, [Mike Malone](https://www.linkedin.com/in/mmalone/), were having dinner with [Cal Henderson](https://www.linkedin.com/in/iamcal/) (Flickr) and [Richard Crowley](https://www.linkedin.com/in/richarddcrowley/) (OpenDNS). They chatted about this problem and conceived the idea of creating an open standard for sharing embed code. Cal drafted an initial spec overnight, and they named it [oEmbed](https://oembed.com/).
 
-> It basically works by having your site say to YouTube, “Hey, I want to add this video to my post. Can you please send me the HTML? Thanks!” 
-> <br> – [Skookum Monkey](https://skookummonkey.com/blog/awesome-simplicity-oembed-wordpress/?utm_source=ReviveOldPost&utm_medium=social&utm_campaign=ReviveOldPost)
+<p style="font-family: georgia, serif; font-size:16pt; font-style:italic; text-align:center; margin-top: 30px; margin-bottom: 30px; margin-left: 20%; margin-right: 20%;">
+    It basically works by having your site say to YouTube, “Hey, I want to add this video to my post. Can you please send me the HTML? Thanks!” <br>
+    – <a href="https://skookummonkey.com/blog/awesome-simplicity-oembed-wordpress/?utm_source=ReviveOldPost&utm_medium=social&utm_campaign=ReviveOldPost">Skookum Monkey</a>
+</p>
 
 Many content providers implement oEmbed, which LinkedIn uses to support embedding. Here is how it works in the case of YouTube.
 
@@ -159,7 +163,9 @@ Some other examples. The oEmbed links and embeddable HTML don’t follow any par
 
 ## [FOWA Miami - Leah Culver via Flickr](https://www.flickr.com/photos/hyku/2300680760/in/photolist-4viAeE-aaRLu1-5eHsAD-4ZcfCR-661WTp-3gNpSP-5rcg2w-4WZqzy-4viAny-6b1vLa-6qFngz-4vHDk2-3gMJYJ-4QHZAh-bhyC1x-4v5ctD-3Pdeoi-bwoaKt-475JtD-bhyyE6-taLus-4CJGGz-3gRNhb-4CJPWk-apzRjf-4CNXCL-5jUArC-a8N2Y2-4oBtBo-4vjGp5-4vewF2-4CJPSp-5WFqGy-7XuA8f-4vjwRA-5sWC81-4CP6cN-8xvYMJ-4vj8Tg-4vBnDe-4haZNJ-47no8m-4CJGrM-8xw2Dq-4viyTW-4oeY9P-4Ej66p-8NHBT6-4CP6g1-475Hnv):
 
+<center>
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/hyku/2300680760/" title="FOWA Miami - Leah Culver by hyku, on Flickr"><img src="https://live.staticflickr.com/2169/2300680760_600aa44314_b.jpg" width="1024" height="685" alt="FOWA Miami - Leah Culver"></a><script async src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+</center>
 
 ## Embedded HTML:
 
@@ -169,7 +175,9 @@ Some other examples. The oEmbed links and embeddable HTML don’t follow any par
 
 ## SlideShare [OAuth and OEmbed](https://www.slideshare.net/leahculver/o-auth-oembednyc09):
 
+<center>
 <iframe src="https://www.slideshare.net/slideshow/embed_code/key/eg8zV35wx3ux87" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/leahculver/o-auth-oembednyc09" title="OAuth and OEmbed" target="_blank">OAuth and OEmbed</a> </strong> from <strong><a target="_blank" href="https://www.slideshare.net/leahculver">leahculver</a></strong> </div>
+</center>
 
 ## Embedded HTML:
 
@@ -179,10 +187,12 @@ Some other examples. The oEmbed links and embeddable HTML don’t follow any par
 
 ## [Ben Ward on Twitter](https://twitter.com/benward/status/144870918613766144):
 
+<center>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Additional hugs and love to <a href="https://twitter.com/leahculver">@leahculver</a>, <a href="https://twitter.com/mjmalone">@mjmalone</a>, <a href="https://twitter.com/rcrowley">@rcrowley</a> and <a href="https://twitter.com/iamcal">@iamcal</a> for  inventing oEmbed.</p>
   — Ben Ward (@benward) <a href="https://twitter.com/benward/status/144870918613766144">December 8, 2011</a>
 </blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</center>
 
 ## Embedded HTML:
 
@@ -199,8 +209,10 @@ Not every sort of content that supports embedding implements oEmbed. Some provid
 
 And, not every content provider that supports oEmbed is enabled to embed content in on the LinkedIn Publishing platform. The LinkedIn platform does not simply pass through every embed HTML returned through the oEmbed protocol.
 
-> When you’re creating a site that’s going to display HTML (as with video embeds), there’s always the potential for [cross-site scripting](https://en.wikipedia.org/wiki/Cross-site_scripting) (XSS) attacks from the site providing the code. 
-> <br>– [Getting Started With OEmbed](https://www.wired.com/2010/02/get_started_with_oembed/)
+<p style="font-family: georgia, serif; font-size:16pt; font-style:italic; text-align:center; margin-top: 30px; margin-bottom: 30px; margin-left: 20%; margin-right: 20%;">
+    When you’re creating a site that’s going to display HTML (as with video embeds), there’s always the potential for <a href="https://en.wikipedia.org/wiki/Cross-site_scripting">cross-site scripting</a> (XSS) attacks from the site providing the code. <br>
+    – <a href="https://www.wired.com/2010/02/get_started_with_oembed/">Getting Started With OEmbed</a>
+</p>
 
 One reason is security. In some cases, the embed HTML contains scripting calls or other features that are disallowed by default. There is a review process before a provider is enabled for embedding content. WordPress follows a [similar procedure](https://wordpress.org/support/article/embeds/).
 
